@@ -30,6 +30,7 @@
 \definecolor{purple}{HTML}{D3A4F9}
 \definecolor{red}{HTML}{FB4485}
 \definecolor{blue}{HTML}{6CE0F1}
+\definecolor{aquamarine}{HTML}{36AF90}
 
 \ifdefined\@cv@print
   \colorlet{green}{gray}
@@ -117,7 +118,8 @@ minimum height=2cm, yshift=0.5mm] (box) at (current page.north){};
         red\or%
         orange\or%
         green\or%
-        purple\else%
+        purple\or%
+        aquamarine\else%
         headercolor\fi%
     } #1#2#3%
   }%
@@ -161,6 +163,17 @@ minimum height=2cm, yshift=0.5mm] (box) at (current page.north){};
     \bodyfont #4\vspace{\parsep}%
   }\\}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%
+% freetext environment %
+%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\setlength{\tabcolsep}{0pt}
+\newenvironment{freetext}[1]{%
+\hangindent=3mm \hangafter1%
+  \parbox[t]{14.0cm}{%
+    \bodyfont #1\vspace{\parsep}%
+  }\\}
+
 %%%%%%%%%%%%%%%%%%%%%%%
 % Manual Bibliography %
 %%%%%%%%%%%%%%%%%%%%%%%
@@ -186,7 +199,7 @@ minimum height=2cm, yshift=0.5mm] (box) at (current page.north){};
   \renewcommand{\section}[1]{
     \par\vspace{\baselineskip}{\Large\headingfont\color{headercolor} ##1}
   }
-  \begin{textblock}{3.6}(1.5, 4.33)
+  \begin{textblock}{4.6}(0.5, 4.33)
   \begin{flushright}
   \obeycr
 }{%
