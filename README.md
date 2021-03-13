@@ -1,11 +1,22 @@
-# About
-A new version of the famous Friggeri CV. My much simpler version now works without external font files, with regular (pdf)latex and without biber.
+# My resume
 
+My resume, periodicaly updated, informations might not be up-to-date.
 
-# License
+## How to generate
 
-Copyright (C) 2015, Edgar Klenske  
-Copyright (C) 2014, Jelmer Tiete  
+```bash
+xelatex k-cv.tex
+```
+
+(install MacTex to get latex binaries on macos)
+
+## About
+This is using a new version of the famous Friggeri CV. This simpler version now works without external font files, with regular (pdf)latex and without biber.
+
+## License
+Copyright (C) 2021, Augustin Peyrard
+Copyright (C) 2015, Edgar Klenske
+Copyright (C) 2014, Jelmer Tiete
 Copyright (C) 2012, Adrien Friggeri
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
