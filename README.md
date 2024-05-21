@@ -5,10 +5,8 @@ My resume, periodicaly updated, informations might not be up-to-date.
 ## How to generate
 
 ```bash
-xelatex k-cv.tex
+just build
 ```
-
-(install MacTex to get latex binaries on macos)
 
 ## About
 This is using a new version of the famous Friggeri CV. This simpler version now works without external font files, with regular (pdf)latex and without biber.
